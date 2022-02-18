@@ -1,0 +1,27 @@
+.header{
+    padding-top: 77px;
+    padding-bottom: 72px;
+    background-color: #dcdcdc;
+    height: 100px;
+    width: 1349px;
+    
+    &__logo{
+        width: 273px;
+        height: 100px;
+    }
+
+    &__tels{
+        display: flex;
+        flex-direction: column;
+        float: right;
+    }
+
+    &__tel{
+        font-family: 'Open Sans Condensed';
+        font-size: 40px;
+        line-height: 46px;
+        font-weight: 300;
+        color: #767676;
+        text-decoration: none;
+    }
+}

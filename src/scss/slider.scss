@@ -1,0 +1,37 @@
+.slider{
+    position: relative;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin: 0 auto;
+
+    &__img{
+        display: block;
+        width: 1200px;
+        height: 340px;
+        margin: 0 auto;
+    }
+
+    .slick-arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        font-size: 0;
+        outline: none;
+        border: none;
+    }
+
+    .slick-prev{
+        width: 34px;
+        height: 61px;
+        left: 128px;
+        background: url(../images/arrow-prev.png) 0 0 no-repeat;
+    }
+
+    .slick-next{
+        width: 34px;
+        height: 61px;
+        right: 128px;
+        background: url(../images/arrow-next.png) 0 0 no-repeat;
+    }
+}
