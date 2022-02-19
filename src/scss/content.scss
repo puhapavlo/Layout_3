@@ -1,6 +1,8 @@
 .content{
     padding-top: 10px;
     padding-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
     &__breadcrumbs{
         &-link, &-line, &-text{
             font-size: 14px;
@@ -14,10 +16,11 @@
 
     &__products{
         padding-top: 27px;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__left{
-        float: left;
         width: 180px;
         display: flex;
         flex-direction: column;
@@ -31,5 +34,134 @@
     &__link, &__sublink{
         font-size: 18px;
         color: #767676;
+        text-decoration: none;
+    }
+
+    &__link:hover, &__sublink:hover{
+        transition: all ease-in-out 0.4s;
+        color: #010101;
+        text-decoration: underline;
+    }
+
+    &__list{
+        margin-left: 30px;
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+        margin-bottom: 15px;
+    }
+
+    &__link{
+        margin-bottom: 15px;
+    }
+
+    &__active:hover + &__list{
+        display: block;
+        transition: all ease-in-out 0.4s;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__price{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-title{
+            font-size: 30px;
+            font-weight: 700;
+            color: #444444;
+            margin-top: 6px;
+        }
+    }
+
+    &__product{
+        width: 210px;
+        height: 340px;
+        padding: 20px;
+        background-color: #dcdcdc;
+
+        
+        &:not(:nth-child(3)){
+            margin-right: 15px;
+        }
+
+        &:last-child, &:nth-child(4){
+            margin-top: 20px;
+        }
+
+        &-title{
+            margin-top: 21px;
+            font-size: 18px;
+            color: #767676;
+            text-decoration: none;
+        }
+
+        &-buy{
+            margin-top: 55px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-price{
+            font-size: 28px;
+            font-weight: 700;
+            color: #444444;
+        }
+    }
+
+    &__store{
+        display: flex;
+        flex-wrap: wrap;
+        width: 780px;
+    }
+
+    &__pages{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+        &-link{
+            font-size: 14px;
+            color: #767676;
+            text-decoration: none;
+            
+            &:nth-child(3){
+                font-size: 18px;
+                color: #444444;
+            }
+
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__line{
+        display: block;
+        width: 800px;
+        margin-top: 65px;
+        height: 1px;
+        background-color: #777777;
+        margin-left: auto;
+        margin-right: 0em;
+    }
+
+    &__descr{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 800px;
+        margin-left: auto;
+        margin-right: 0em;
+    }
+
+    &__text{
+        font-size: 14px;
+        color: #767676;
+
+        &:first-child{
+            margin-right: 40px;
+        }
     }
 }
